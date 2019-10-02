@@ -14,8 +14,8 @@
     $a = 1;
     $b = "Hola";
 
-    echo "El valor de a es un integer " + is_int($a);
-    echo "El valor de b no es un integer y por ello no sale :" ;
+    echo "El valor de a es un integer " . is_int($a). "<br>";
+    echo "El valor de b no es un integer y por ello no sale :" . is_int($b) ;
 
             ?>    
 
