@@ -33,9 +33,7 @@
 
     echo"<table>";
     
-    while(10 >= $contador){
-
-            
+    for($contador = 0; 10 >= $contador; $contador++ ){
 
         echo"<tr>";
 
@@ -91,7 +89,6 @@
 
         }
 
-        $contador++;
 
         $numero1= 1;
 

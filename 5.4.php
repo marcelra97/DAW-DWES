@@ -33,9 +33,7 @@
 
     echo"<table>";
     
-    while(10 >= $contador){
-
-            
+    do{
 
         echo"<tr>";
 
@@ -102,7 +100,7 @@
         echo "</tr>";
     
         
-    }
+    }while(10 >= $contador);
 
     echo"</table>";
 
