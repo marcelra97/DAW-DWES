@@ -16,7 +16,7 @@
     
     for ($i=strlen($palabra1); $i >= 0 ; $i--) { 
         
-        $palabra2 .= $palabra1[$i];
+    $palabra2 .= $palabra1[$i];
 
     }
 

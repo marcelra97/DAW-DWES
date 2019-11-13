@@ -1,38 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+<html>
+
+    <head>
 
 
-</head>
-<body>
-    
-<?php
 
-$palabra = "el marci es el putito amo, el mejor.";
+    </head>
 
-for ($i=0; $i <strlen($palabra); $i++) { 
-    
+    <body>
 
-    if(strpos($palabra, "el")){
+    <?php
 
-        echo 
+$cadena = "el cuando el coche es de el ";
+$cadena1 = "";
+$indice = -1;
+$indice1 = -1;
+$contador = 0;
+$arrayIndice = [];
+$cambio = false;
+
+    for ($i = 0; $i < strlen($cadena); $i++) {
+
+        $indice = strpos($cadena, "el", $i);
+
+
+
+    if ($indice != $indice1) {
+
+        $indice1 = $indice;
+        array_push($arrayIndice, $indice);
+
     }
-
-
 }
 
-   
+
+    for ($i = 0; $i < strlen($cadena); $i++) {
+
+
+        if($arrayIndice[$contador] == $i){
+
+            $cadena1.="the";
+
+            $contador++;
+
+            $cambio=true;
+
+        }else{
+
+            if($cambio == false){
+                $cadena1.=substr($cadena,$i,1);
+            }
+
+            $cambio = false;
+        
+    }
+}
+
+echo $cadena1;
+
+?>
 
 
 
+    </body>
 
 
-            ?>    
 
-
-</body>
 </html>
