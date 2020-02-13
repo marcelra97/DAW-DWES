@@ -13,7 +13,7 @@
 <?php
 
     $arrayNumeros = array("nombre" => "marcel", "apellido1" => "ramirez", "apellido2" => "novillo");
-
+ 
     for ($i=0; $i < count($arrayNumeros); $i++) { 
         
         $elemento = each($arrayNumeros);
